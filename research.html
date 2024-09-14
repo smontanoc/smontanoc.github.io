@@ -1,447 +1,300 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sebastian Montano Correa</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container_header">
+        <div class="inner_container items-middle space-between">
+          <div class="logo">
+            <a href="index.html">Sebastian Montano</a>
+          </div>
+          <button type="button" class="nav-toggler">
+            <span></span>
+          </button>
+          <nav class="nav">
+            <ul class="pt-3">
+              <li><a href="index.html" class="active">home</a></li>
+              <li><a href="research.html">research</a></li>
+              <li><a href="assets/files/CV.pdf">CV</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
 
-<html>
+    <section>
+      <div class="research_section mt-4">
+      <div class="container">
 
-<head>
+         <!-- Working Papers -->
+        <div class="row">
+        <div class="col-md-10 offset-md-1">
+        <div class="research_content">
+          <h4>Working Papers</h4>
 
-<meta charset="utf-8" />
-<meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+          <h6 class="my-3">
+            <a style="margin:0; font-size:100%; font-weight:bold">
+            Climbing the Ladder: Promotions, Financial Decisions, and Household Labor Supply
+            </a>
+            <p>
+            with <a href="https://sites.google.com/site/christianpossosuarez/" target="_blank">Christian Posso</a>
+            <br>
+            <i>Job Market Paper</i>, 2024
+            <br>
+            </p>
+          </h6>
+          <button
+            class="btn btn-primary my-1 mb-4 d-flex align-items-center"
+            data-toggle="collapse"
+            data-target="#collapseSection1"
+            aria-expanded="false"
+            aria-controls="collapseSection1">
+            <i class="fas fa-plus"></i>Abstract
+          </button>
+          <div class="collapse" id="collapseSection1">
+          <div class="card card-body">
+            <p>
+              Promotions are widely used to incentivize worker effort. Promoted workers typically receive a permanent pay raise after assuming jobs of higher status within a firm. In this paper, we exploit a sharp discontinuity in promotion allocation to compare the outcomes of nearly identical workers at a large public organization. In Colombia, career progression among police officers is determined by performance on a written exam. We combine data from this exam with rich administrative records to study the effect of promotions on financial decisions, worker outcomes, and household labor supply. Our findings show that promoted workers increase their debt exposure, primarily through housing investments. We do not find any effects on employment retention, health outcomes, or family decisions. However, household labor supply decreases following a worker's promotion, driven by reductions in labor participation among the worker's spouse and more senior household members. Although a larger decline is observed among spouses with children, promotions do not influence the decision to have additional children.
+            </p>
+          </div>
+          </div>
 
-<title>Sebastian Montano Correa</title>
+          <h6 class="my-3">
+            <a style="margin:0; font-size:100%; font-weight:bold">
+            Signaling Specific Skills and the Labor Market of College Graduates
+            <a href="https://docs.iza.org/dp16449.pdf" target="_blank">[Draft]</a>
+            </a>
+            <p>
+            with <a href="https://www.matiasbusso.org/" target="_blank">Matias Busso</a> 
+            and <a href="https://sites.google.com/site/juansebastianmunoz87/" target="_blank">Juan Mu&ntildeoz</a>
+            <br>
+            <i>Submitted </i><br>
+            </p>
+          </h6>
+          <button
+            class="btn btn-primary my-1 mb-4 d-flex align-items-center"
+            data-toggle="collapse"
+            data-target="#collapseSection2"
+            aria-expanded="false"
+            aria-controls="collapseSection2">
+            <i class="fas fa-plus"></i>Abstract
+          </button>
+          <div class="collapse" id="collapseSection2">
+          <div class="card card-body">
+            <p>
+            We study how signaling skills that are specific to college majors affect labor market outcomes of college graduates. 
+            We rely on census-like data and a regression discontinuity design to study the impacts of a well-known award given to 
+            top performers on a mandatory nationwide exam in Colombia. The award allows students to signal their high level of 
+            specific skills when searching for a job. These students earn 7 to 12 percent more than otherwise identical students 
+            lacking the signal. This positive return persists five years after graduation. The signal mostly benefits workers who 
+            graduate from low-reputation colleges, and allows workers to find jobs in more productive firms and in sectors that better 
+            use their skills. We rule out that the positive earnings returns are explained by human capital. The signal favors mostly 
+            less advantaged groups, implying that reducing information frictions about students' skills could potentially shrink 
+            earnings gaps. Our results imply that information policies like those that formally certify skills can improve the efficiency 
+            in talent allocation of the economy and, at the same time, level the playing field. 
+            </p>
+          </div>
+          </div>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
-<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<style>h1 {font-size: 34px;}
-       h1.title {font-size: 38px;}
-       h2 {font-size: 30px;}
-       h3 {font-size: 24px;}
-       h4 {font-size: 18px;}
-       h5 {font-size: 16px;}
-       h6 {font-size: 12px;}
-       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
-       pre:not([class]) { background-color: white }</style>
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+          <h6 class="my-3">
+            <a style="margin:0; font-size:100%; font-weight:bold">
+            Beyond the Bennett Hypothesis: Financial Aid, College Quality, and Education Expansion
+            </a>
+            <p>
+            with <a href="https://sites.google.com/umd.edu/alejandra-montoya" target="_blank">Alejandra Montoya</a>
+            </p>
+          </h6>
+          <button
+            class="btn btn-primary my-1 mb-4 d-flex align-items-center"
+            data-toggle="collapse"
+            data-target="#collapseSection3"
+            aria-expanded="false"
+            aria-controls="collapseSection3">
+            <i class="fas fa-plus"></i>Abstract
+          </button>
+          <div class="collapse" id="collapseSection3">
+          <div class="card card-body">
+            <p>
+            We study how signaling skills that are specific to college majors affect labor market outcomes of college graduates. 
+            We rely on census-like data and a regression discontinuity design to study the impacts of a well-known award given to 
+            top performers on a mandatory nationwide exam in Colombia. The award allows students to signal their high level of 
+            specific skills when searching for a job. These students earn 7 to 12 percent more than otherwise identical students 
+            lacking the signal. This positive return persists five years after graduation. The signal mostly benefits workers who 
+            graduate from low-reputation colleges, and allows workers to find jobs in more productive firms and in sectors that better 
+            use their skills. We rule out that the positive earnings returns are explained by human capital. The signal favors mostly 
+            less advantaged groups, implying that reducing information frictions about students' skills could potentially shrink 
+            earnings gaps. Our results imply that information policies like those that formally certify skills can improve the efficiency 
+            in talent allocation of the economy and, at the same time, level the playing field. 
+            </p>
+          </div>
+          </div>
 
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-</style>
+        </div>
+        </div>
+        </div>
 
-<link rel="stylesheet" href="css/style.css" type="text/css" />
+        <!-- Publications -->
+        <div class="row">
+        <div class="col-md-10 offset-md-1">
+        <hr/>
+        <div class="research_content my-3">
+        <h4>Publications</h4>
 
-<style type = "text/css">
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-img {
-  max-width:100%;
-}
-.tabbed-pane {
-  padding-top: 12px;
-}
-.html-widget {
-  margin-bottom: 20px;
-}
-button.code-folding-btn:focus {
-  outline: none;
-}
-summary {
-  display: list-item;
-}
-details > summary > p:only-child {
-  display: inline;
-}
-pre code {
-  padding: 0;
-}
-</style>
+          <h6 class="my-3">
+            <a style="margin:0; font-size:100%; font-weight:bold">
+            The Unintended Consequences of Teacher Merit-Based Selection: Evidence from Large-Scale Reform in Colombia
+            <a href="http://www.econweb.umd.edu/~pope/Colombian_Teachers.pdf" target="_blank">[Draft]</a>
+            </a>
+            <p>
+            with <a href="https://www.matiasbusso.org/" target="_blank">Matias Busso</a>, 
+            <a href="https://sites.google.com/site/juansebastianmunoz87/" target="_blank">Juan Mu&ntildeoz</a>, and 
+            <a href="http://www.econweb.umd.edu/~pope/" target="_blank">Nolan Pope</a>
+            <br>
+            <i>Forthcoming <b>Journal of Public Economics</b></i><br>
+            </p>
+          </h6>
+          <button
+            class="btn btn-primary my-1 mb-4 d-flex align-items-center"
+            data-toggle="collapse"
+            data-target="#collapseSection4"
+            aria-expanded="false"
+            aria-controls="collapseSection4">
+            <i class="fas fa-plus"></i>Abstract
+          </button>
+          <div class="collapse" id="collapseSection4">
+          <div class="card card-body">
+            <p>
+            Teacher quality is a key factor in improving student academic achievement. 
+            As such, educational policymakers strive to design systems to hire the most effective teachers. 
+            This paper examines the effects of a national policy reform in Colombia that established a merit-based teacher-hiring 
+            system intended to enhance teacher quality and improve student learning. Implemented in 2005 for all public schools, 
+            the policy ties teacher-hiring decisions to candidates' performance on an exam evaluating subject-specific knowledge 
+            and teaching aptitude. We find that though the policy sharply increased pre-college test scores of teachers, it also decreased 
+            the overall stock of teacher experience and led to sharp decreases in students' exam performance and educational attainment. 
+            Using a difference-in-differences strategy to compare the outcomes of students from public and private schools over two decades, 
+            we show that the hiring reform  decreased students' performance on high school exit exams by 8 percent of a standard deviation, 
+            and reduced the likelihood that students enroll in and graduate from college by more than 10 percent. The results underscore that 
+            relying exclusively on specific ex ante measures of teacher quality to screen candidates may unintentionally reduce 
+            students' learning gains.
+            </p>
+          </div>
+          </div>
 
-<style type="text/css">
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #adb5bd;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
+          <h6 class="my-3">
+            <a style="margin:0; font-size:100%; font-weight:bold">
+            Unbundling Returns to Postsecondary Degrees and Skills: Evidence from Colombia
+            <a href="https://docs.iza.org/dp17283.pdf" target="_blank">[Draft]</a>
+            </a>
+            <p>
+            with <a href="https://www.matiasbusso.org/" target="_blank">Matias Busso</a> and 
+            <a href="https://sites.google.com/site/juansebastianmunoz87/" target="_blank">Juan Mu&ntildeoz</a>
+            <br>
+            <i>Forthcoming <b>Education Economics</b></i><br>
+            </p>
+          </h6>
+          <button
+            class="btn btn-primary my-1 mb-4 d-flex align-items-center"
+            data-toggle="collapse"
+            data-target="#collapseSection5"
+            aria-expanded="false"
+            aria-controls="collapseSection5">
+            <i class="fas fa-plus"></i>Abstract
+          </button>
+          <div class="collapse" id="collapseSection5">
+          <div class="card card-body">
+            <p>
+            Using longitudinal data of college graduates in Colombia, we estimate labor market returns to postsecondary degrees and to 
+            various skills, including literacy, numeracy, foreign language, and field-specific skills. Graduates of academic programs 
+            and schools of higher reputation obtain higher earnings relative to vocational public programs. A one standard deviation 
+            increase in each skill predicts average earnings increases of one to three percent. Returns vary along the earnings 
+            distribution, with tenure, with the degree of job specialization, and by gender. Our results imply that degrees and skills 
+            capture different human capital components that are rewarded differently in the labor market.
+            </p>
+          </div>
+          </div>
+  
+        </div>
+        </div>
+        </div>   
+        
+         <!-- Work in Progress -->
+        <div class="row">
+        <div class="col-md-10 offset-md-1">
+        <hr/>
+        <div class="research_content my-3">
+        <h4>Work in Progress</h4>
 
-<script type="text/javascript">
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
+          <h6 class="my-3">
+            <a style="margin:0; font-size:100%; font-weight:bold">
+            Flexibility and College Success: Evidence from a Reform at a Flagship University 
+            </a>
+          </h6>
+          <button
+            class="btn btn-primary my-1 mb-4 d-flex align-items-center"
+            data-toggle="collapse"
+            data-target="#collapseSection6"
+            aria-expanded="false"
+            aria-controls="collapseSection6">
+            <i class="fas fa-plus"></i>Abstract
+          </button>
+          <div class="collapse" id="collapseSection6">
+          <div class="card card-body">
+            <p>
+            College graduation rates vary significantly depending on the institution where students enroll. While financial constraints and pre-enrollment preparation have received significant attention in the literature, supply-side factors could also explain the heterogeneous graduation rates across schools. Leveraging variation from a reform at a large university in Colombia and employing a difference-in-differences strategy, I show how the structure of academic programs can affect student success in college. The reform increased the flexibility of academic plans that students can follow to obtain a degree. I find that students who enroll after the reform was implemented are 4 percentage points more likely to drop out within two years. Moreover, students are also 8.1 percentage points less likely to graduate within six years. These effects cannot be explained by pre-college test scores, family income, or other demographic characteristics of students. Given that the student-teacher ratio remained unaffected by the reform, changes in college resources are also unlikely to drive the effects.
+            </p>
+          </div>
+          </div>
 
-  // mark it active
-  menuAnchor.tab('show');
+          <h6 class="my-3">
+            <a style="margin:0; font-size:100%; font-weight:bold">
+            Give Teachers a Break? Teacher Preparation Period and Student Outcomes
+            </a>
+            <p>
+            with <a href="http://www.nathanpetek.com/" target="_blank">Nathan Petek</a>, 
+            <a href="http://www.econweb.umd.edu/~pope/" target="_blank">Nolan Pope</a>, and 
+            <a href="https://www.rand.org/about/people/z/zuo_george.html" target="_blank">George Zuo</a>
+            </p>
+          </h6>
+          <button
+            class="btn btn-primary my-1 mb-4 d-flex align-items-center"
+            data-toggle="collapse"
+            data-target="#collapseSection7"
+            aria-expanded="false"
+            aria-controls="collapseSection7">
+            <i class="fas fa-plus"></i>Abstract
+          </button>
+          <div class="collapse" id="collapseSection7">
+          <div class="card card-body">
+            <p> 
+            Abstract coming soon!
+            </p>
+          </div>
+          </div>
 
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+        </div>
+        </div>
+        </div>
 
-  // Navbar adjustments
-  var navHeight = $(".navbar").first().height() + 15;
-  var style = document.createElement('style');
-  var pt = "padding-top: " + navHeight + "px; ";
-  var mt = "margin-top: -" + navHeight + "px; ";
-  var css = "";
-  // offset scroll position for anchor links (for fixed navbar)
-  for (var i = 1; i <= 6; i++) {
-    css += ".section h" + i + "{ " + pt + mt + "}\n";
-  }
-  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
-  document.head.appendChild(style);
-});
-</script>
+      </div>
+      </div>
+    </section>
 
-<!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: transparent;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
-
-<style>
-  button.accordion {
-  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  cursor: pointer;
-  padding: 0px;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 100%;
-  transition: 0.3s;
-  background-color: #f8f8f8;
-  }
-  button.accordion.active, button.accordion:hover {
-  background-color: #f8f8f8;
-  }
-  button.accordion:after {
-  content: " [+] ";
-  font-size: 90%;
-  color:#777;
-  float: left;
-  margin-left: 1px;
-  }
-
-  button.accordion.active:after {
-  content: " [\2212] ";
-  }
-  div.panel {
-  padding: 0 20px;
-  margin-top: 5px;
-  display: none;
-  background-color: white;
-  font-size: 100%;
-  }
-  div.panel.show {
-  display: block !important;
-  }
-  .social-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-</style>
-
-<style>
-  ul {
-    list-style-type: square; /* Use square bullets */
-    }
-</style>
-
-<!-- code folding -->
-
-</head>
-
-<body>
-
-<div class="container-fluid main-container">
-
-<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Sebastian Monta&ntildeo</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="files/CV.pdf" target="_blank">CV</a></li>
-        <li><a href="teaching.html">Teaching</a></li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
-
-<div id="header">
-
-</div>
-
-<p><br> </br> <!--- Agrega lineas en blanco ---></p>
-
-<!------------- Left Panel ------------->
-<div class="col-sm-4">
-  <h4>Sebastian Monta&ntildeo</h4>
-  <p>
-    PhD Student in Economics
-    <br>University of Maryland</br><br>
-  </p>
-</div>
-<!------------- End Left Panel ------------->
-
-<!------------- Right Panel ------------->
-<div class="col-sm-8">
-
-<!--- Working Papers --->
-<div id="working-papers" class="section level2">
-<h3>Working Papers</h3>
-  <ul>
-    <!--- 1. Teacher Reform in Colombia --->
-    <li>
-    <p style="margin:0"> 
-      <a style="margin:0; font-size:100%; font-weight:bold" target="_blank" rel="noopener noreferrer" href="http://www.econweb.umd.edu/~pope/Colombian_Teachers.pdf">
-      The Unintended Consequences of Teacher Merit-Based Selection: Evidence from Large-Scale Reform in Colombia
-      </a><br> 
-      with <a href="https://www.matiasbusso.org/">Matias Busso</a>, <a href="https://sites.google.com/site/juansebastianmunoz87/">Juan Mu&ntildeoz Morales</a>, and <a href="http://www.econweb.umd.edu/~pope/">Nolan Pope</a><br> 
-      <i>Revision requested at <b>Journal of Public Economics</b></i><br>
-      <button class="accordion"> Abstract </button>
-      <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;">
-        <p> 
-          Teacher quality is a key factor in improving student academic achievement. 
-          As such, educational policymakers strive to design systems to hire the most effective teachers. 
-          This paper examines the effects of a national policy reform in Colombia that established a merit-based teacher-hiring 
-          system intended to enhance teacher quality and improve student learning. Implemented in 2005 for all public schools, 
-          the policy ties teacher-hiring decisions to candidates' performance on an exam evaluating subject-specific knowledge 
-          and teaching aptitude. We find that though the policy sharply increased pre-college test scores of teachers, it also decreased 
-          the overall stock of teacher experience and led to sharp decreases in students' exam performance and educational attainment. 
-          Using a difference-in-differences strategy to compare the outcomes of students from public and private schools over two decades, 
-          we show that the hiring reform  decreased students' performance on high school exit exams by 8 percent of a standard deviation, 
-          and reduced the likelihood that students enroll in and graduate from college by more than 10 percent. The results underscore that 
-          relying exclusively on specific ex ante measures of teacher quality to screen candidates may unintentionally reduce 
-          students' learning gains.
-        </p>
-      </div><br>          
-    </li>
-
-    <!--- 2. Returns to Signaling --->
-    <li>
-    <p style="margin:0"> 
-      <a style="margin:0; font-size:100%; font-weight:bold" target="_blank" rel="noopener noreferrer" href="https://docs.iza.org/dp16449.pdf">
-      Signaling Specific Skills and the Labor Market of College Graduates
-      </a><br> 
-      with <a href="https://www.matiasbusso.org/">Matias Busso</a> and <a href="https://sites.google.com/site/juansebastianmunoz87/">Juan Mu&ntildeoz Morales</a><br> 
-      <i>Submitted</i><br>
-      <button class="accordion"> Abstract </button>   
-      <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;">
-        <p> We study how signaling skills that are specific to college majors affect labor market outcomes of college graduates. 
-          We rely on census-like data and a regression discontinuity design to study the impacts of a well-known award given to 
-          top performers on a mandatory nationwide exam in Colombia. The award allows students to signal their high level of 
-          specific skills when searching for a job. These students earn 7 to 12 percent more than otherwise identical students 
-          lacking the signal. This positive return persists five years after graduation. The signal mostly benefits workers who 
-          graduate from low-reputation colleges, and allows workers to find jobs in more productive firms and in sectors that better 
-          use their skills. We rule out that the positive earnings returns are explained by human capital. The signal favors mostly 
-          less advantaged groups, implying that reducing information frictions about students' skills could potentially shrink 
-          earnings gaps. Our results imply that information policies like those that formally certify skills can improve the efficiency 
-          in talent allocation of the economy and, at the same time, level the playing field. 
-        </p>
-      </div><br>
-    </li>
-  </ul>
-</div>
-
-<!--- Work in progress --->
-<hr>
-<div id="work-in-progress" class="section level2">
-<h3>Work in progress</h3>      
-  <ul>
-    <!--- 3. College Success: UNal --->
-    <li>
-    <p style="margin:0"> <b>Flexibility and College Success: Evidence from a Reform at a Flagship University</b><br>
-      <button class="accordion"> Abstract </button>
-      <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;">
-        <p> College completion rates across countries remain low despite governmental efforts. Success in college depends 
-          on students' preparation and financial constraints, but it also depends on college quality and other supply-side 
-          factors. In this paper, I use a difference-in-differences strategy to show that increasing the flexibility of 
-          academic activities at a selective university in Colombia negatively affected students' educational attainment. 
-          Specifically, students' probability of graduating within six years decreased by ten percentage points (32 percent), 
-          and dropout rates within 2 years increased by four percentage points (or 11 percent). Initial evidence suggests that 
-          these effects are driven by strong incentives faced by students to complete fewer classes per semester post-reform implementation.
-        </p>
-      </div><br>
-    </li>
-
-    <li>
-    <p style="margin:0"> <b>Give Teachers a Break? Teacher Preparation Period and Student Outcomes</b><br> 
-      with <a href="http://www.nathanpetek.com/">Nathan Petek</a>, <a href="http://www.econweb.umd.edu/~pope/">Nolan Pope</a>, and <a href="https://www.rand.org/about/people/z/zuo_george.html">George Zuo</a><br>
-      <button class="accordion"> Abstract </button>
-      <div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px;">
-        <p> Abstract coming soon! 
-        </p>
-      </div><br>
-    </li>
-  </ul>
-</div>
-</div>
-</div>
-<!------------- End Right Panel ------------->
-<p><br> </br> <!--- Agrega lineas en blanco ---></p>
-
-</div>
-
-<script src="javascripts/scale.fix.js"></script>
-    <script> 
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].onclick = function(){
-            this.classList.toggle("active");
-            this.parentNode.nextElementSibling.classList.toggle("show");
-      }
-    }
-    </script>
-<script>
-
-// add bootstrap table styles to pandoc tables
-function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
-}
-$(document).ready(function () {
-  bootstrapStylePandocTables();
-});
-
-
-</script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open');
-  });
-});
-</script>
-
-<!-- code folding -->
-
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "http://example.com/MathJax.js";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
-
-</body>
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+     <!-- custom js -->
+    <script src="assets/js/script.js"></script>
+  
+  </body>
 </html>
