@@ -161,8 +161,9 @@ a{
 }
 
 .research_content h4, .biography h4, .working_pro_content h4{
-	font-weight: 700;
-	letter-spacing: 1px;
+	font-weight: 600;
+	letter-spacing: 0px;
+	text-align: right;
 	/* border-bottom: 2px solid #f3a93d;
 	display: inline-block;
 	padding-bottom: 4px; */
